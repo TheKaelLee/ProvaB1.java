@@ -1,0 +1,22 @@
+package com.mycompany.provab1.javaa;
+
+autor : Lucas Gabriel Ferraz Li
+
+
+
+
+public class Problema03 {
+    public static void main(String[] args){
+        Scanner entrada = new Scanner(System.in);
+        double aumento = 1.5, salario = 1000, ano = 1995;
+
+        do{
+            salario = salario + (salario * aumento / 100); 
+        if(ano >= 1997){
+                aumento = aumento * 2;
+        };
+            ano++;
+        }while(ano <= 2022);
+
+        System.out.println(salario);
+} 
